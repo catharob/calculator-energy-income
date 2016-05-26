@@ -1,0 +1,51 @@
+body {
+	height: 100%;
+	margin-left: 3%;
+	margin-top: 3%;
+	margin-right: 3%;
+	background: linear-gradient(#cbc9e2, #FFFFFF);
+}
+
+h1 {
+	font-size: 30px;
+	margin-bottom: 3%;
+}
+
+h3 {
+	font-size: 20px;
+
+}
+
+p {
+
+	margin-bottom: .5%
+}
+
+input {
+
+	margin-bottom: 1%;
+}
+
+button {
+
+}
+
+#reset {
+	margin-bottom: 2%
+}
+
+#comparison {
+	margin-bottom: 100%
+}
+
+.error {
+	color:red;
+}
+
+#bill-error{
+	margin-left: 1%;
+}
+
+#income-error{
+	margin-left: 1%
+}

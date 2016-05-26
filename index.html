@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>Energy Income Calculator</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<div id="title">
+		<h1>What portion of your income do you spend on energy?<h1>
+	</div>
+	<div id="calculator">
+		<form id="myForm" action="javascript:calculate()">
+		<h3 class="question">First, enter your total monthly energy bill (electricity, natural gas, heating).</h3> 
+		<p>If you don't have your bills handy, you can use the national average, as the Energy Information Agency calculated it in its <a href="http://www.eia.gov/consumption/residential/data/2009/c&e/ce1.1.xlsx">last Residential Energy Consumption Survey</a>.</p>
+		<p><strong>Or, add together your own costs.</strong></p>
+		<p><button onclick="populateNational()">Use national average</button></p>
+			<!-- <button onclick="populateColorado()">Use Colorado average</button> -->
+
+		
+		<p>$<input type="number" name="bill" id="bill" required></p>
+
+		<h3 class="question">Now, enter your annual household income.</h3>
+		<p>$<input type="number" name="income" id="income" required></p>
+		<br>
+		<input type="submit" value="Submit">
+
+		</form>
+		<button id="reset" onclick="reset()">Reset</button>
+	</div>
+	<div id="results">
+	</div>
+	<div id="comparison">
+
+	</div>
+
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
+
+</html>
